@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <mod description="" displayName="Spore-CustomCapabilities" dllsBuild="$SPOREMOD_DLLS_BUILD" hasCustomInstaller="false" installerSystemVersion="1.0.1.2" isExperimental="$SPOREMOD_EXPERIMENTAL" unique="Spore-CustomCapabilities">
   <prerequisite game="GalacticAdventures">Spore-CustomCapabilities.package</prerequisite>
+  <prerequisite>Spore - Custom Capabilities.dll</prerequisite>
 </mod>
