@@ -1,2 +1,2 @@
 # Spore-CustomCapabilities
-You can download the mod in the Releases page.
+-- WORK IN PROGRESS --
