@@ -2,23 +2,20 @@
 
 #include <Spore\BasicIncludes.h>
 
-#define ButtonWinProcPtr intrusive_ptr<ButtonWinProc>
+#define AbilityListWinProcPtr intrusive_ptr<AbilityListWinProc>
 
 // To avoid repeating UTFWin:: all the time.
 using namespace UTFWin;
 
-class ButtonWinProc 
+class AbilityListWinProc 
 	: public IWinProc
 	, public DefaultRefCounted
 {
-	IWindowPtr mpWindowOwner;
 public:
-	static const uint32_t TYPE = id("CustomAbilitySlotWinProc");
-
-	uint32_t mAbilityID;
+	static const uint32_t TYPE = id("AbilityListWinProc");
 	
-	ButtonWinProc(UTFWin::IWindow* rootWindow, uint32_t abilityID);
-	~ButtonWinProc();
+	AbilityListWinProc();
+	~AbilityListWinProc();
 
 	int AddRef() override;
 	int Release() override;
@@ -27,9 +24,5 @@ public:
 	int GetEventFlags() const override;
 	// This is the function you have to implement, called when a window you added this winproc to received an event
 	bool HandleUIMessage(IWindow* pWindow, const Message& message) override;
-
-	void SetAbility(uint32_t abilityID);
-
-	void ListAbilities();
 	
 };

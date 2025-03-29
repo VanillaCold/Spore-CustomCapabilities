@@ -98,6 +98,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AbilityListWinProc.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="ButtonWinProc.h" />
     <ClInclude Include="cCapabilityManager.h">
       <SubType>
@@ -121,6 +125,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbilityDetours.cpp" />
+    <ClCompile Include="AbilityListWinProc.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="ButtonWinProc.cpp" />
     <ClCompile Include="cCapabilityManager.cpp">
       <SubType>

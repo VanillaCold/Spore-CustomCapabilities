@@ -1,0 +1,2828 @@
+FileResource atlas graphics_atlas~!#1B2FE3CA.png  // 0
+FileResource atlas graphics_atlas~!#1B2FE3CA.png  // 1
+FileResource atlas graphics_atlas~!#1B2FE3CA.png  // 2
+FileResource atlas graphics_atlas~!#1B2FE3CA.png  // 3
+FileResource atlas graphics_atlas~!#1B2FE3CA.png  // 4
+FileResource atlas graphics_atlas~!#1B2FE3CB.png  // 5
+FileResource atlas graphics_atlas~!#1B2FE3CB.png  // 6
+FileResource atlas graphics_atlas~!#1B2FE3CB.png  // 7
+FileResource atlas graphics_atlas~!#1B2FE3CB.png  // 8
+FileResource atlas graphics_atlas~!#1B2FE3CB.png  // 9
+
+block 10 type ProportionalLayout
+	#0F3D0000 float [0.0, 0.0, 1.0, 0.0]
+end
+
+block 11 type SimpleLayout
+	#0F3D0000 byte [2]
+end
+
+block 12 type ProportionalLayout
+	#0F3D0000 float [0.5, 0.0, 0.5, 0.0]
+end
+
+block 13 type ProportionalLayout
+	#0F3D0000 float [0.5, 0.0, 0.5, 0.0]
+end
+
+block 14 type GlideEffect
+	#4F2B0000 float [0.3]
+	#4F2B0001 int [1]
+	#4F2B0002 int [2]
+	#4F2B0003 float [0.0]
+	#4F2B0004 float [0.0]
+	#4F2B0005 float [8.0]
+	#4F2C0000 vec2 [[0.0, 60.0]]
+end
+
+block 15 type SimpleLayout
+	#0F3D0000 byte [2]
+end
+
+block 16 type cSPUIBehaviorTimeFunctionDampedPeriodic
+	#0253AD19 bool [false]
+	#0253ACED float [0.3]
+	#0269A849 float [0.0]
+	#0269A84B float [0.0]
+	#0269B186 int [1]
+	#0269A919 float [3.0]
+	#0269A91B float [12.0]
+	#026A02AB bool [false]
+end
+
+block 17 type cSPUIBehaviorWinInterpolatorScale
+	#0254AB8E bool [false]
+	#0254B153 float [1.4]
+	#0254B152 float [1.0]
+end
+
+block 18 type cSPUIBehaviorActionWinInterpolator
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0254CDFB short [16]
+	#0254CDFC short [17]
+end
+
+block 19 type cSPUIBehaviorWinBoolStateEvent
+	#03335C41 short [18]
+	#03335C42 short [-1]
+	#03335C43 short [-1]
+	#03335C44 short [-1]
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0255EAF8 int [0x25a5f8e]
+	#0255EAF9 bool [false]
+	#0255EAFA int [0x7fffffff]
+	#03339952 int [1]
+end
+
+block 20 type cSPUIBehaviorTimeFunctionDampedPeriodic
+	#0253AD19 bool [false]
+	#0253ACED float [0.5]
+	#0269A849 float [0.0]
+	#0269A84B float [0.0]
+	#0269B186 int [1]
+	#0269A919 float [5.0]
+	#0269A91B float [30.0]
+	#026A02AB bool [false]
+end
+
+block 21 type cSPUIBehaviorWinInterpolatorScale
+	#0254AB8E bool [false]
+	#0254B153 float [0.9]
+	#0254B152 float [1.0]
+end
+
+block 22 type cSPUIBehaviorActionWinInterpolator
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0254CDFB short [20]
+	#0254CDFC short [21]
+end
+
+block 23 type cSPUIBehaviorWinBoolStateEvent
+	#03335C41 short [22]
+	#03335C42 short [-1]
+	#03335C43 short [-1]
+	#03335C44 short [-1]
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0255EAF8 int [0x25a5f95]
+	#0255EAF9 bool [false]
+	#0255EAFA int [0x7fffffff]
+	#03339952 int [2]
+end
+
+block 24 type Image
+	resource short [0]
+	uvCoords vec4 [[0.730469, 0.109375, 0.8125, 0.191406]]
+	dimensions dimension [[42, 42]]
+	#01BE0004 int [0]
+end
+
+block 25 type cSPUIStdDrawableImageInfo
+	#00000001 short [24]
+	#00000003 int [0xf03a4fac]
+	#00000002 short [-1]
+	#00000004 int [0xffd1dbff]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [6]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0xff00003e]
+		end
+	end
+	#00000008 int [3]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [0]
+end
+
+block 26 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff757575]
+	#00000002 short [-1]
+	#00000004 int [0xffbebebe]
+	#00000005 int [1]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [0]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [0]
+end
+
+block 27 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff5398ff]
+	#00000002 short [-1]
+	#00000004 int [-1]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 28 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff335d9c]
+	#00000002 short [-1]
+	#00000004 int [-1]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 29 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff4c4f4e]
+	#00000002 short [-1]
+	#00000004 int [0xff404041]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [3]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [-1129]
+		end
+	end
+	#00000008 int [3]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [0]
+end
+
+block 30 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [-1]
+	#00000002 short [-1]
+	#00000004 int [-1]
+	#00000005 int [1]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 31 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff4c4f4e]
+	#00000002 short [-1]
+	#00000004 int [0xff404041]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [-1129]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 32 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xffc2ad24]
+	#00000002 short [-1]
+	#00000004 int [0xff59480b]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [-1129]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 33 type cSPUIStdDrawable
+	#0F3AC75E short [-1, -1, -1, -1, -1, -1, -1, -1]
+	#0F3C000D short [-1]
+	#EF3C000A int [2]
+	#EF3C000B vec2 [[1.0, 1.0]]
+	#EF3C000C sections 0
+		block
+			#00000001 float [0.33333334]
+			#00000002 float [0.33333334]
+			#00000003 float [0.33333334]
+			#00000004 float [0.33333334]
+		end
+	end
+	#039A69E6 sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#054010A0 short [25]
+	#054010A1 short [26]
+	#054010A2 short [27]
+	#054010A3 short [28]
+	#054010A4 short [29]
+	#054010A5 short [30]
+	#054010A6 short [31]
+	#054010A7 short [32]
+end
+
+block 34 type WinButton
+	#EEC1B000 int [11]
+	#EEC1B001 int [0x4a1a04d4]
+	#EEC1B002 int [0]
+	bounds vec4 [[-4.0, 1.0, 32.0, 37.0]]
+	tint int [0xffffffff]
+	#EEC1B00E int [0xaebb69]
+	#EEC1B00C short [19, 23]
+	#EEC1B00B short []
+	#EEC1B009 int [0]
+	#EEC1D002 int [0]
+	#EEC1D001 int [0]
+	#039A69E6 sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	drawable short [33]
+	#EEC1D004 int [1]
+	#EEC1D006 sections 0
+		block
+			#00000001 float [1.0]
+			#00000002 float [1.0]
+			#00000003 float [1.0]
+			#00000004 float [1.0]
+		end
+	end
+	#EEC1D00A vec2 [[1.0, 1.0]]
+	#EEC1D00B int [0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000]
+	#EEC1D003 int [2]
+	#EEC1D005 int [0]
+end
+
+block 35 type cSPUIBehaviorTimeFunctionDampedPeriodic
+	#0253AD19 bool [false]
+	#0253ACED float [0.3]
+	#0269A849 float [0.0]
+	#0269A84B float [0.0]
+	#0269B186 int [1]
+	#0269A919 float [3.0]
+	#0269A91B float [12.0]
+	#026A02AB bool [false]
+end
+
+block 36 type cSPUIBehaviorWinInterpolatorScale
+	#0254AB8E bool [false]
+	#0254B153 float [1.4]
+	#0254B152 float [1.0]
+end
+
+block 37 type cSPUIBehaviorActionWinInterpolator
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0254CDFB short [35]
+	#0254CDFC short [36]
+end
+
+block 38 type cSPUIBehaviorWinBoolStateEvent
+	#03335C41 short [37]
+	#03335C42 short [-1]
+	#03335C43 short [-1]
+	#03335C44 short [-1]
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0255EAF8 int [0x25a5f8e]
+	#0255EAF9 bool [false]
+	#0255EAFA int [0x7fffffff]
+	#03339952 int [1]
+end
+
+block 39 type cSPUIBehaviorTimeFunctionDampedPeriodic
+	#0253AD19 bool [false]
+	#0253ACED float [0.5]
+	#0269A849 float [0.0]
+	#0269A84B float [0.0]
+	#0269B186 int [1]
+	#0269A919 float [5.0]
+	#0269A91B float [30.0]
+	#026A02AB bool [false]
+end
+
+block 40 type cSPUIBehaviorWinInterpolatorScale
+	#0254AB8E bool [false]
+	#0254B153 float [0.9]
+	#0254B152 float [1.0]
+end
+
+block 41 type cSPUIBehaviorActionWinInterpolator
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0254CDFB short [39]
+	#0254CDFC short [40]
+end
+
+block 42 type cSPUIBehaviorWinBoolStateEvent
+	#03335C41 short [41]
+	#03335C42 short [-1]
+	#03335C43 short [-1]
+	#03335C44 short [-1]
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0255EAF8 int [0x25a5f95]
+	#0255EAF9 bool [false]
+	#0255EAFA int [0x7fffffff]
+	#03339952 int [2]
+end
+
+block 43 type Image
+	resource short [0]
+	uvCoords vec4 [[0.730469, 0.109375, 0.8125, 0.191406]]
+	dimensions dimension [[42, 42]]
+	#01BE0004 int [0]
+end
+
+block 44 type cSPUIStdDrawableImageInfo
+	#00000001 short [24]
+	#00000003 int [0xf03a4fac]
+	#00000002 short [-1]
+	#00000004 int [0xffd1dbff]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [6]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0xff00003e]
+		end
+	end
+	#00000008 int [3]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [0]
+end
+
+block 45 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff757575]
+	#00000002 short [-1]
+	#00000004 int [0xffbebebe]
+	#00000005 int [1]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [0]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [0]
+end
+
+block 46 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff5398ff]
+	#00000002 short [-1]
+	#00000004 int [-1]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 47 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff335d9c]
+	#00000002 short [-1]
+	#00000004 int [-1]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 48 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff4c4f4e]
+	#00000002 short [-1]
+	#00000004 int [0xff404041]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [3]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [-1129]
+		end
+	end
+	#00000008 int [3]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [0]
+end
+
+block 49 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [-1]
+	#00000002 short [-1]
+	#00000004 int [-1]
+	#00000005 int [1]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 50 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff4c4f4e]
+	#00000002 short [-1]
+	#00000004 int [0xff404041]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [-1129]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 51 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xffc2ad24]
+	#00000002 short [-1]
+	#00000004 int [0xff59480b]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [-1129]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 52 type cSPUIStdDrawable
+	#0F3AC75E short [-1, -1, -1, -1, -1, -1, -1, -1]
+	#0F3C000D short [-1]
+	#EF3C000A int [2]
+	#EF3C000B vec2 [[1.0, 1.0]]
+	#EF3C000C sections 0
+		block
+			#00000001 float [0.33333334]
+			#00000002 float [0.33333334]
+			#00000003 float [0.33333334]
+			#00000004 float [0.33333334]
+		end
+	end
+	#039A69E6 sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#054010A0 short [44]
+	#054010A1 short [45]
+	#054010A2 short [46]
+	#054010A3 short [47]
+	#054010A4 short [48]
+	#054010A5 short [49]
+	#054010A6 short [50]
+	#054010A7 short [51]
+end
+
+block 53 type WinButton
+	#EEC1B000 int [11]
+	#EEC1B001 int [0x4a1a04d7]
+	#EEC1B002 int [0]
+	bounds vec4 [[23.0, 1.0, 59.0, 37.0]]
+	tint int [0xffffffff]
+	#EEC1B00E int [0xaebb69]
+	#EEC1B00C short [38, 42]
+	#EEC1B00B short []
+	#EEC1B009 int [0]
+	#EEC1D002 int [1]
+	#EEC1D001 int [0]
+	#039A69E6 sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	drawable short [52]
+	#EEC1D004 int [1]
+	#EEC1D006 sections 0
+		block
+			#00000001 float [1.0]
+			#00000002 float [1.0]
+			#00000003 float [1.0]
+			#00000004 float [1.0]
+		end
+	end
+	#EEC1D00A vec2 [[1.0, 1.0]]
+	#EEC1D00B int [0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000]
+	#EEC1D003 int [2]
+	#EEC1D005 int [0]
+end
+
+block 54 type cSPUIBehaviorTimeFunctionDampedPeriodic
+	#0253AD19 bool [false]
+	#0253ACED float [0.3]
+	#0269A849 float [0.0]
+	#0269A84B float [0.0]
+	#0269B186 int [1]
+	#0269A919 float [3.0]
+	#0269A91B float [12.0]
+	#026A02AB bool [false]
+end
+
+block 55 type cSPUIBehaviorWinInterpolatorScale
+	#0254AB8E bool [false]
+	#0254B153 float [1.4]
+	#0254B152 float [1.0]
+end
+
+block 56 type cSPUIBehaviorActionWinInterpolator
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0254CDFB short [54]
+	#0254CDFC short [55]
+end
+
+block 57 type cSPUIBehaviorWinBoolStateEvent
+	#03335C41 short [56]
+	#03335C42 short [-1]
+	#03335C43 short [-1]
+	#03335C44 short [-1]
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0255EAF8 int [0x25a5f8e]
+	#0255EAF9 bool [false]
+	#0255EAFA int [0x7fffffff]
+	#03339952 int [1]
+end
+
+block 58 type cSPUIBehaviorTimeFunctionDampedPeriodic
+	#0253AD19 bool [false]
+	#0253ACED float [0.5]
+	#0269A849 float [0.0]
+	#0269A84B float [0.0]
+	#0269B186 int [1]
+	#0269A919 float [5.0]
+	#0269A91B float [30.0]
+	#026A02AB bool [false]
+end
+
+block 59 type cSPUIBehaviorWinInterpolatorScale
+	#0254AB8E bool [false]
+	#0254B153 float [0.9]
+	#0254B152 float [1.0]
+end
+
+block 60 type cSPUIBehaviorActionWinInterpolator
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0254CDFB short [58]
+	#0254CDFC short [59]
+end
+
+block 61 type cSPUIBehaviorWinBoolStateEvent
+	#03335C41 short [60]
+	#03335C42 short [-1]
+	#03335C43 short [-1]
+	#03335C44 short [-1]
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0255EAF8 int [0x25a5f95]
+	#0255EAF9 bool [false]
+	#0255EAFA int [0x7fffffff]
+	#03339952 int [2]
+end
+
+block 62 type Image
+	resource short [0]
+	uvCoords vec4 [[0.730469, 0.109375, 0.8125, 0.191406]]
+	dimensions dimension [[42, 42]]
+	#01BE0004 int [0]
+end
+
+block 63 type cSPUIStdDrawableImageInfo
+	#00000001 short [24]
+	#00000003 int [0xf03a4fac]
+	#00000002 short [-1]
+	#00000004 int [0xffd1dbff]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [6]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0xff00003e]
+		end
+	end
+	#00000008 int [3]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [0]
+end
+
+block 64 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff757575]
+	#00000002 short [-1]
+	#00000004 int [0xffbebebe]
+	#00000005 int [1]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [0]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [0]
+end
+
+block 65 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff5398ff]
+	#00000002 short [-1]
+	#00000004 int [-1]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 66 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff335d9c]
+	#00000002 short [-1]
+	#00000004 int [-1]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 67 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff4c4f4e]
+	#00000002 short [-1]
+	#00000004 int [0xff404041]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [3]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [-1129]
+		end
+	end
+	#00000008 int [3]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [0]
+end
+
+block 68 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [-1]
+	#00000002 short [-1]
+	#00000004 int [-1]
+	#00000005 int [1]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 69 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff4c4f4e]
+	#00000002 short [-1]
+	#00000004 int [0xff404041]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [-1129]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 70 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xffc2ad24]
+	#00000002 short [-1]
+	#00000004 int [0xff59480b]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [-1129]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 71 type cSPUIStdDrawable
+	#0F3AC75E short [-1, -1, -1, -1, -1, -1, -1, -1]
+	#0F3C000D short [-1]
+	#EF3C000A int [2]
+	#EF3C000B vec2 [[1.0, 1.0]]
+	#EF3C000C sections 0
+		block
+			#00000001 float [0.33333334]
+			#00000002 float [0.33333334]
+			#00000003 float [0.33333334]
+			#00000004 float [0.33333334]
+		end
+	end
+	#039A69E6 sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#054010A0 short [63]
+	#054010A1 short [64]
+	#054010A2 short [65]
+	#054010A3 short [66]
+	#054010A4 short [67]
+	#054010A5 short [68]
+	#054010A6 short [69]
+	#054010A7 short [70]
+end
+
+block 72 type WinButton
+	#EEC1B000 int [11]
+	#EEC1B001 int [0x4a1a04d6]
+	#EEC1B002 int [0]
+	bounds vec4 [[50.0, 1.0, 86.0, 37.0]]
+	tint int [0xffffffff]
+	#EEC1B00E int [0xaebb69]
+	#EEC1B00C short [57, 61]
+	#EEC1B00B short []
+	#EEC1B009 int [0]
+	#EEC1D002 int [0]
+	#EEC1D001 int [0]
+	#039A69E6 sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	drawable short [71]
+	#EEC1D004 int [1]
+	#EEC1D006 sections 0
+		block
+			#00000001 float [1.0]
+			#00000002 float [1.0]
+			#00000003 float [1.0]
+			#00000004 float [1.0]
+		end
+	end
+	#EEC1D00A vec2 [[1.0, 1.0]]
+	#EEC1D00B int [0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000]
+	#EEC1D003 int [2]
+	#EEC1D005 int [0]
+end
+
+block 73 type cSPUIBehaviorTimeFunctionDampedPeriodic
+	#0253AD19 bool [false]
+	#0253ACED float [0.3]
+	#0269A849 float [0.0]
+	#0269A84B float [0.0]
+	#0269B186 int [1]
+	#0269A919 float [3.0]
+	#0269A91B float [12.0]
+	#026A02AB bool [false]
+end
+
+block 74 type cSPUIBehaviorWinInterpolatorScale
+	#0254AB8E bool [false]
+	#0254B153 float [1.4]
+	#0254B152 float [1.0]
+end
+
+block 75 type cSPUIBehaviorActionWinInterpolator
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0254CDFB short [73]
+	#0254CDFC short [74]
+end
+
+block 76 type cSPUIBehaviorWinBoolStateEvent
+	#03335C41 short [75]
+	#03335C42 short [-1]
+	#03335C43 short [-1]
+	#03335C44 short [-1]
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0255EAF8 int [0x25a5f8e]
+	#0255EAF9 bool [false]
+	#0255EAFA int [0x7fffffff]
+	#03339952 int [1]
+end
+
+block 77 type cSPUIBehaviorTimeFunctionDampedPeriodic
+	#0253AD19 bool [false]
+	#0253ACED float [0.5]
+	#0269A849 float [0.0]
+	#0269A84B float [0.0]
+	#0269B186 int [1]
+	#0269A919 float [5.0]
+	#0269A91B float [30.0]
+	#026A02AB bool [false]
+end
+
+block 78 type cSPUIBehaviorWinInterpolatorScale
+	#0254AB8E bool [false]
+	#0254B153 float [0.9]
+	#0254B152 float [1.0]
+end
+
+block 79 type cSPUIBehaviorActionWinInterpolator
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0254CDFB short [77]
+	#0254CDFC short [78]
+end
+
+block 80 type cSPUIBehaviorWinBoolStateEvent
+	#03335C41 short [79]
+	#03335C42 short [-1]
+	#03335C43 short [-1]
+	#03335C44 short [-1]
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0255EAF8 int [0x25a5f95]
+	#0255EAF9 bool [false]
+	#0255EAFA int [0x7fffffff]
+	#03339952 int [2]
+end
+
+block 81 type Image
+	resource short [0]
+	uvCoords vec4 [[0.730469, 0.109375, 0.8125, 0.191406]]
+	dimensions dimension [[42, 42]]
+	#01BE0004 int [0]
+end
+
+block 82 type cSPUIStdDrawableImageInfo
+	#00000001 short [24]
+	#00000003 int [0xf03a4fac]
+	#00000002 short [-1]
+	#00000004 int [0xffd1dbff]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [6]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0xff00003e]
+		end
+	end
+	#00000008 int [3]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [0]
+end
+
+block 83 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff757575]
+	#00000002 short [-1]
+	#00000004 int [0xffbebebe]
+	#00000005 int [1]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [0]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [0]
+end
+
+block 84 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff5398ff]
+	#00000002 short [-1]
+	#00000004 int [-1]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 85 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff335d9c]
+	#00000002 short [-1]
+	#00000004 int [-1]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 86 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff4c4f4e]
+	#00000002 short [-1]
+	#00000004 int [0xff404041]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [3]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [-1129]
+		end
+	end
+	#00000008 int [3]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [0]
+end
+
+block 87 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [-1]
+	#00000002 short [-1]
+	#00000004 int [-1]
+	#00000005 int [1]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 88 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff4c4f4e]
+	#00000002 short [-1]
+	#00000004 int [0xff404041]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [-1129]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 89 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xffc2ad24]
+	#00000002 short [-1]
+	#00000004 int [0xff59480b]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [-1129]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 90 type cSPUIStdDrawable
+	#0F3AC75E short [-1, -1, -1, -1, -1, -1, -1, -1]
+	#0F3C000D short [-1]
+	#EF3C000A int [2]
+	#EF3C000B vec2 [[1.0, 1.0]]
+	#EF3C000C sections 0
+		block
+			#00000001 float [0.33333334]
+			#00000002 float [0.33333334]
+			#00000003 float [0.33333334]
+			#00000004 float [0.33333334]
+		end
+	end
+	#039A69E6 sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#054010A0 short [82]
+	#054010A1 short [83]
+	#054010A2 short [84]
+	#054010A3 short [85]
+	#054010A4 short [86]
+	#054010A5 short [87]
+	#054010A6 short [88]
+	#054010A7 short [89]
+end
+
+block 91 type WinButton
+	#EEC1B000 int [11]
+	#EEC1B001 int [0x4a1a04d1]
+	#EEC1B002 int [0]
+	bounds vec4 [[77.0, 1.0, 113.0, 37.0]]
+	tint int [0xffffffff]
+	#EEC1B00E int [0xaebb69]
+	#EEC1B00C short [76, 80]
+	#EEC1B00B short []
+	#EEC1B009 int [0]
+	#EEC1D002 int [0]
+	#EEC1D001 int [0]
+	#039A69E6 sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	drawable short [90]
+	#EEC1D004 int [1]
+	#EEC1D006 sections 0
+		block
+			#00000001 float [1.0]
+			#00000002 float [1.0]
+			#00000003 float [1.0]
+			#00000004 float [1.0]
+		end
+	end
+	#EEC1D00A vec2 [[1.0, 1.0]]
+	#EEC1D00B int [0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000]
+	#EEC1D003 int [2]
+	#EEC1D005 int [0]
+end
+
+block 92 type cSPUIBehaviorTimeFunctionDampedPeriodic
+	#0253AD19 bool [false]
+	#0253ACED float [0.3]
+	#0269A849 float [0.0]
+	#0269A84B float [0.0]
+	#0269B186 int [1]
+	#0269A919 float [3.0]
+	#0269A91B float [12.0]
+	#026A02AB bool [false]
+end
+
+block 93 type cSPUIBehaviorWinInterpolatorScale
+	#0254AB8E bool [false]
+	#0254B153 float [1.4]
+	#0254B152 float [1.0]
+end
+
+block 94 type cSPUIBehaviorActionWinInterpolator
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0254CDFB short [92]
+	#0254CDFC short [93]
+end
+
+block 95 type cSPUIBehaviorWinBoolStateEvent
+	#03335C41 short [94]
+	#03335C42 short [-1]
+	#03335C43 short [-1]
+	#03335C44 short [-1]
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0255EAF8 int [0x25a5f8e]
+	#0255EAF9 bool [false]
+	#0255EAFA int [0x7fffffff]
+	#03339952 int [1]
+end
+
+block 96 type cSPUIBehaviorTimeFunctionDampedPeriodic
+	#0253AD19 bool [false]
+	#0253ACED float [0.5]
+	#0269A849 float [0.0]
+	#0269A84B float [0.0]
+	#0269B186 int [1]
+	#0269A919 float [5.0]
+	#0269A91B float [30.0]
+	#026A02AB bool [false]
+end
+
+block 97 type cSPUIBehaviorWinInterpolatorScale
+	#0254AB8E bool [false]
+	#0254B153 float [0.9]
+	#0254B152 float [1.0]
+end
+
+block 98 type cSPUIBehaviorActionWinInterpolator
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0254CDFB short [96]
+	#0254CDFC short [97]
+end
+
+block 99 type cSPUIBehaviorWinBoolStateEvent
+	#03335C41 short [98]
+	#03335C42 short [-1]
+	#03335C43 short [-1]
+	#03335C44 short [-1]
+	#03335C12 short [-1]
+	#03335C13 short [-1]
+	#03335C14 short [-1]
+	#03335C15 short [-1]
+	#0255EAF8 int [0x25a5f95]
+	#0255EAF9 bool [false]
+	#0255EAFA int [0x7fffffff]
+	#03339952 int [2]
+end
+
+block 100 type Image
+	resource short [0]
+	uvCoords vec4 [[0.730469, 0.109375, 0.8125, 0.191406]]
+	dimensions dimension [[42, 42]]
+	#01BE0004 int [0]
+end
+
+block 101 type cSPUIStdDrawableImageInfo
+	#00000001 short [24]
+	#00000003 int [0xf03a4fac]
+	#00000002 short [-1]
+	#00000004 int [0xffd1dbff]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [6]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0xff00003e]
+		end
+	end
+	#00000008 int [3]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [0]
+end
+
+block 102 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff757575]
+	#00000002 short [-1]
+	#00000004 int [0xffbebebe]
+	#00000005 int [1]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [0]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [0]
+end
+
+block 103 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff5398ff]
+	#00000002 short [-1]
+	#00000004 int [-1]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 104 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff335d9c]
+	#00000002 short [-1]
+	#00000004 int [-1]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 105 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff4c4f4e]
+	#00000002 short [-1]
+	#00000004 int [0xff404041]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [3]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [-1129]
+		end
+	end
+	#00000008 int [3]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [0]
+end
+
+block 106 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [-1]
+	#00000002 short [-1]
+	#00000004 int [-1]
+	#00000005 int [1]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 107 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xff4c4f4e]
+	#00000002 short [-1]
+	#00000004 int [0xff404041]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [-1129]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 108 type cSPUIStdDrawableImageInfo
+	#00000001 short [-1]
+	#00000003 int [0xffc2ad24]
+	#00000002 short [-1]
+	#00000004 int [0xff59480b]
+	#00000005 int [0]
+	#00000006 vec2 [[0.8, 0.8]]
+	#00000007 vec2 [[0.0, 0.0]]
+	#0000000C vec2 [[1.0, 1.0]]
+	#0000000D vec2 [[0.0, 0.0]]
+	#0000000A sections 0
+		block
+			#00000001 int [1]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [-1129]
+		end
+	end
+	#00000008 int [1]
+	#0000000B sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#00000009 int [1]
+end
+
+block 109 type cSPUIStdDrawable
+	#0F3AC75E short [-1, -1, -1, -1, -1, -1, -1, -1]
+	#0F3C000D short [-1]
+	#EF3C000A int [2]
+	#EF3C000B vec2 [[1.0, 1.0]]
+	#EF3C000C sections 0
+		block
+			#00000001 float [0.33333334]
+			#00000002 float [0.33333334]
+			#00000003 float [0.33333334]
+			#00000004 float [0.33333334]
+		end
+	end
+	#039A69E6 sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#054010A0 short [101]
+	#054010A1 short [102]
+	#054010A2 short [103]
+	#054010A3 short [104]
+	#054010A4 short [105]
+	#054010A5 short [106]
+	#054010A6 short [107]
+	#054010A7 short [108]
+end
+
+block 110 type WinButton
+	#EEC1B000 int [11]
+	#EEC1B001 int [0x4a1a04d0]
+	#EEC1B002 int [0]
+	bounds vec4 [[104.0, 1.0, 140.0, 37.0]]
+	tint int [0xffffffff]
+	#EEC1B00E int [0xaebb69]
+	#EEC1B00C short [95, 99]
+	#EEC1B00B short []
+	#EEC1B009 int [0]
+	#EEC1D002 int [0]
+	#EEC1D001 int [0]
+	#039A69E6 sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	drawable short [109]
+	#EEC1D004 int [1]
+	#EEC1D006 sections 0
+		block
+			#00000001 float [1.0]
+			#00000002 float [1.0]
+			#00000003 float [1.0]
+			#00000004 float [1.0]
+		end
+	end
+	#EEC1D00A vec2 [[1.0, 1.0]]
+	#EEC1D00B int [0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000]
+	#EEC1D003 int [2]
+	#EEC1D005 int [0]
+end
+
+block 111 type Image
+	resource short [5]
+	uvCoords vec4 [[0.371094, 0.53125, 0.421875, 0.582031]]
+	dimensions dimension [[26, 26]]
+	#01BE0004 int [0]
+end
+
+block 112 type ImageDrawable
+	image short [111]
+	#039A69E6 sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#4F3C4A29 int [3]
+	#4F3C4A28 int [3]
+	#4F3C4A27 int [0]
+	#4F3C4A2A int [0]
+	#4F3C4A2B float [1.0]
+end
+
+block 113 type Window
+	#EEC1B000 int [3]
+	#EEC1B001 int [0]
+	#EEC1B002 int [0]
+	bounds vec4 [[0.0, 5.0, 26.0, 31.0]]
+	#EEC1B00A text ["Empty Slot3"]
+	tint int [0xffffffff]
+	#EEC1B00E int [0xaebb69]
+	layout short []
+	children short []
+	#EEC1B009 int [0]
+	additiveTint int [0x7f7f7f]
+	drawable short [112]
+end
+
+block 114 type Image
+	resource short [5]
+	uvCoords vec4 [[0.371094, 0.53125, 0.421875, 0.582031]]
+	dimensions dimension [[26, 26]]
+	#01BE0004 int [0]
+end
+
+block 115 type ImageDrawable
+	image short [111]
+	#039A69E6 sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#4F3C4A29 int [3]
+	#4F3C4A28 int [3]
+	#4F3C4A27 int [0]
+	#4F3C4A2A int [0]
+	#4F3C4A2B float [1.0]
+end
+
+block 116 type Window
+	#EEC1B000 int [3]
+	#EEC1B001 int [0]
+	#EEC1B002 int [0]
+	bounds vec4 [[27.0, 5.0, 53.0, 31.0]]
+	#EEC1B00A text ["Empty Slot2"]
+	tint int [0xffffffff]
+	#EEC1B00E int [0xaebb69]
+	layout short []
+	children short []
+	#EEC1B009 int [0]
+	additiveTint int [0x7f7f7f]
+	drawable short [115]
+end
+
+block 117 type Image
+	resource short [5]
+	uvCoords vec4 [[0.371094, 0.53125, 0.421875, 0.582031]]
+	dimensions dimension [[26, 26]]
+	#01BE0004 int [0]
+end
+
+block 118 type ImageDrawable
+	image short [111]
+	#039A69E6 sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#4F3C4A29 int [3]
+	#4F3C4A28 int [3]
+	#4F3C4A27 int [0]
+	#4F3C4A2A int [0]
+	#4F3C4A2B float [1.0]
+end
+
+block 119 type Window
+	#EEC1B000 int [3]
+	#EEC1B001 int [0]
+	#EEC1B002 int [0]
+	bounds vec4 [[54.0, 5.0, 80.0, 31.0]]
+	#EEC1B00A text ["Empty Slot1"]
+	tint int [0xffffffff]
+	#EEC1B00E int [0xaebb69]
+	layout short []
+	children short []
+	#EEC1B009 int [0]
+	additiveTint int [0x7f7f7f]
+	drawable short [118]
+end
+
+block 120 type Image
+	resource short [5]
+	uvCoords vec4 [[0.371094, 0.53125, 0.421875, 0.582031]]
+	dimensions dimension [[26, 26]]
+	#01BE0004 int [0]
+end
+
+block 121 type ImageDrawable
+	image short [111]
+	#039A69E6 sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#4F3C4A29 int [3]
+	#4F3C4A28 int [3]
+	#4F3C4A27 int [0]
+	#4F3C4A2A int [0]
+	#4F3C4A2B float [1.0]
+end
+
+block 122 type Window
+	#EEC1B000 int [3]
+	#EEC1B001 int [0]
+	#EEC1B002 int [0]
+	bounds vec4 [[81.0, 5.0, 107.0, 31.0]]
+	#EEC1B00A text ["Empty Slot4"]
+	tint int [0xffffffff]
+	#EEC1B00E int [0xaebb69]
+	layout short []
+	children short []
+	#EEC1B009 int [0]
+	additiveTint int [0x7f7f7f]
+	drawable short [121]
+end
+
+block 123 type Image
+	resource short [5]
+	uvCoords vec4 [[0.371094, 0.53125, 0.421875, 0.582031]]
+	dimensions dimension [[26, 26]]
+	#01BE0004 int [0]
+end
+
+block 124 type ImageDrawable
+	image short [111]
+	#039A69E6 sections 0
+		block
+			#00000001 int [0]
+			#00000002 int [2]
+			#00000003 int [2]
+			#00000004 float [0.0]
+			#00000005 float [0.0]
+			#00000006 float [0.0]
+			#00000007 float [0.0]
+			#00000008 float [3.0E-4]
+			#00000009 float [0.5]
+			#0000000A int [0]
+		end
+	end
+	#4F3C4A29 int [3]
+	#4F3C4A28 int [3]
+	#4F3C4A27 int [0]
+	#4F3C4A2A int [0]
+	#4F3C4A2B float [1.0]
+end
+
+block 125 type Window
+	#EEC1B000 int [3]
+	#EEC1B001 int [0]
+	#EEC1B002 int [0]
+	bounds vec4 [[109.0, 5.0, 135.0, 31.0]]
+	#EEC1B00A text ["Empty Slot5"]
+	tint int [0xffffffff]
+	#EEC1B00E int [0xaebb69]
+	layout short []
+	children short []
+	#EEC1B009 int [0]
+	additiveTint int [0x7f7f7f]
+	drawable short [124]
+end
+
+block 126 type Window
+	#EEC1B000 int [19]
+	#EEC1B001 int [0x7153bbb1]
+	#EEC1B002 int [0]
+	bounds vec4 [[-68.5, -36.0, 65.5, 7.0]]
+	tint int [0xffffffff]
+	#EEC1B00E int [0xaebb69]
+	layout short [13, 14, 15]
+	children short [34, 53, 72, 91, 110, 113, 116, 119, 122, 125]
+	#EEC1B009 int [0]
+	additiveTint int [0x7f7f7f]
+	drawable short [-1]
+end
+
+block 127 type Window
+	#EEC1B000 int [3]
+	#EEC1B001 int [0]
+	#EEC1B002 int [0]
+	bounds vec4 [[-435.0, -373.0, -286.0, -336.0]]
+	tint int [0xffffffff]
+	#EEC1B00E int [0xaebb69]
+	layout short [11, 12]
+	children short [126]
+	#EEC1B009 int [0]
+	additiveTint int [0x7f7f7f]
+	drawable short [-1]
+end
+
+block 128 root type Window
+	#EEC1B000 int [3]
+	#EEC1B001 int [-1]
+	#EEC1B002 int [0]
+	bounds vec4 [[0.0, 0.0, 1024.0, 1024.0]]
+	tint int [0xffffffff]
+	#EEC1B00E int [0xaebb69]
+	layout short [10]
+	children short [127]
+	#EEC1B009 int [0]
+	additiveTint int [0]
+	drawable short [-1]
+end
+

@@ -1,8 +1,10 @@
 names
+CustomText
 atk_bite
 social_energy
 layouts_atlas~	0x40464200
 mv_jump
+CustomDropdown
 Btn5
 Btn4
 LightningStun
@@ -16,6 +18,7 @@ social_gesture
 atk_spit
 social_poses
 atk_strike
+
 CustomButtons
 PoisonBlade
 MissileLaunch

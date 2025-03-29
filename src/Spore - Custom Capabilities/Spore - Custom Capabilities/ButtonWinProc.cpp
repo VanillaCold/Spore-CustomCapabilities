@@ -65,7 +65,8 @@ bool ButtonWinProc::HandleUIMessage(IWindow* window, const Message& message)
 	{
 		if (message.Mouse.IsRightButton())
 		{
-			SetAbility(id("scan"));
+
+			//SetAbility(id("scan"));
 			return true;
 		}
 	}

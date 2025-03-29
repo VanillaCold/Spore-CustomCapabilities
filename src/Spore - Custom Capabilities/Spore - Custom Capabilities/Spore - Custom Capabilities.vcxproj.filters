@@ -40,6 +40,9 @@
     <ClInclude Include="ShowUICheat.h">
       <Filter>Spore - Custom Capabilities</Filter>
     </ClInclude>
+    <ClInclude Include="AbilityListWinProc.h">
+      <Filter>Spore - Custom Capabilities\IWinProcs</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -71,6 +74,9 @@
     </ClCompile>
     <ClCompile Include="ShowUICheat.cpp">
       <Filter>Spore - Custom Capabilities</Filter>
+    </ClCompile>
+    <ClCompile Include="AbilityListWinProc.cpp">
+      <Filter>Spore - Custom Capabilities\IWinProcs</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
