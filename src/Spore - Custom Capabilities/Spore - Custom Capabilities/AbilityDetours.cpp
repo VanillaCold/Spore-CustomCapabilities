@@ -20,7 +20,7 @@ int TakeDamageDetour::DETOUR(float damage, uint32_t attackerPoliticalID, int unk
 			//If it's a valid ability,
 			if (ability)
 			{
-				//DO STUFF
+				CustomAbilityManager.GetStrategyForAbility(ability)->OnHit(creature, this, ability, damage);
 			}
 			//else, if it's not valid, fall back on the CustomAbilityManager.
 			else
@@ -29,7 +29,7 @@ int TakeDamageDetour::DETOUR(float damage, uint32_t attackerPoliticalID, int unk
 				ability = CustomAbilityManager.GetLastAbilityUsed(creature);
 				if (ability)
 				{
-					//DO STUFF
+					CustomAbilityManager.GetStrategyForAbility(ability)->OnHit(creature, this, ability, damage);
 				}
 			}
 		}

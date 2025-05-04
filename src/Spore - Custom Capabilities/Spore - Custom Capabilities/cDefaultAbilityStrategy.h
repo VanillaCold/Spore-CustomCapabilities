@@ -14,9 +14,9 @@ public:
 
 
 	virtual void OnPlayerPreUse(Simulator::cCreatureAbility* ability);
-	virtual void OnUse(cCreatureBasePtr source, Simulator::cCreatureAbility* ability);
+	virtual bool OnUse(cCreatureBasePtr source, Simulator::cCreatureAbility* ability);
 	virtual void OnHit(cCreatureBasePtr source, cCombatantPtr target, Simulator::cCreatureAbility* ability, float damage);
-	virtual void CanUse(cCreatureBasePtr source, Simulator::cCreatureAbility* ability);
+	virtual bool CanUse(cCreatureBasePtr source, Simulator::cCreatureAbility* ability);
 
 	cDefaultAbilityStrategy();
 	~cDefaultAbilityStrategy();
