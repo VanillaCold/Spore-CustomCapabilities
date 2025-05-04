@@ -53,7 +53,8 @@ Simulator::cCreatureAbility* cCustomAbilityManager::GetLastAbilityUsed(cCreature
 
 IAbilityStrategy* cCustomAbilityManager::GetStrategyForAbility(Simulator::cCreatureAbility* ability)
 {
-	auto node = mpCachedStrategies.find(ability);
+	auto propList = ability->mpPropList;
+	auto node = mpCachedStrategies.find(propList->GetResourceKey());
 	if (node != mpCachedStrategies.end())
 	{
 		return node->second;
@@ -66,7 +67,7 @@ IAbilityStrategy* cCustomAbilityManager::GetStrategyForAbility(Simulator::cCreat
 		if (strategyNode != mpAbilityStrategies.end())
 		{
 			IAbilityStrategy* strategy = strategyNode->second;
-			mpCachedStrategies.emplace(ability, strategy);
+			mpCachedStrategies.emplace(propList->GetResourceKey(), strategy);
 			return strategy;
 		}
 	}
@@ -124,44 +125,26 @@ bool cCustomAbilityManager::CanUseAbility(Simulator::cCreatureAbility* ability, 
 
 void cCustomAbilityManager::TriggerSkill(Simulator::cCreatureAbility* ability, cCreatureBasePtr creature)
 {
-	bool needsTarget = true;
-	if (ability)
+	if (CustomAbilityManager.CanUseAbility(ability, creature))
 	{
-		if (auto strategy = GetStrategyForAbility(ability))
+		/*int abilityIndex = -1;
+		for (int i = 0; i < creature->GetAbilitiesCount(); i++)
 		{
-			needsTarget = strategy->sRequiresTarget;
-		}
-	}
-	else
-	{
-		return;
-	}
-
-	if (creature && (creature->mpCombatantTarget || !needsTarget))
-	{
-		auto distance = -1.0f;
-		SporeDebugPrint("%f", ability->mRushingRange);
-		if (creature->mpCombatantTarget)
-		{
-			distance = Math::distance(creature->mPosition, creature->mpCombatantTarget->ToSpatialObject()->mPosition);
-		}
-		//SporeDebugPrint("distance is %f, range is %f", distance, ability->mRange);
-		if (floor(distance) > ceil(ability->mRange) + creature->GetScale() && (distance > ability->mRushingRange || ability->mRushingRange == 0))
-		{
-			creature->WalkTo(1, creature ->mpCombatantTarget->ToSpatialObject()->mPosition, creature->mpCombatantTarget->ToSpatialObject()->mPosition.Normalized());
-			return;
-		}
-		if (ceil(distance) < ability->mAvatarRangeMin && distance != -1.0f)
-		{
-			return;
+			auto newAbility = creature->GetAbility(i);
+			if (newAbility->mpPropList->GetResourceKey().instanceID == ability->mpPropList->GetResourceKey().instanceID)
+			{
+				abilityIndex = i;
+				break;
+			}
 		}
 
-		if (ability->mEnergyCost > creature->mEnergy)
+		if (abilityIndex >= 0)
 		{
-			return;
-		}
-
-		creature->PlayAbility(ability->mpPropList->GetResourceKey().instanceID);
+			// Call the function that prompts the game to do funny stuff, essentially.
+			
+			//STATIC_CALL(Address(0x00d49560), void, Args(int), Args(abilityIndex));
+		}*/
+		GetStrategyForAbility(ability)->OnPlayerPreUse(ability);
 	}
 }
 

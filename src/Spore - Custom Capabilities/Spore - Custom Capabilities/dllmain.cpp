@@ -29,16 +29,13 @@ void Dispose()
 	// This method is called when the game is closing
 }
 
-//FUN_005e4de0
-static_detour(SomethingOrOtherDetour, uint32_t(int*, uint32_t))
+//FUN_00d49220
+static_detour(SomethingOrOtherDetour, void(int))
 {
-	uint32_t detoured(int* somethingID, uint32_t capID)
+	void detoured(int capID)
 	{
-		if (capID == id("stupidity"))
-		{
-			return capID;
-		}
-		return original_function(somethingID, capID);
+		ModAPI::Log("aa %i", capID);
+		return original_function(capID);
 	}
 };
 
@@ -139,7 +136,7 @@ void AttachDetours()
 
 	//AbilityCountDetour::attach(Address(0x00459840));
 
-	//SomethingOrOtherDetour::attach(Address(0x005e4de0));
+	SomethingOrOtherDetour::attach(Address(0x00d49560));//0x00d49220));
 
 	PlayAbilityDetour::attach(GetAddress(Simulator::cCreatureBase, PlayAbility));
 

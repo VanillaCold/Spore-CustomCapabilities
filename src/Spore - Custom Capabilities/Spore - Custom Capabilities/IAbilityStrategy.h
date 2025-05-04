@@ -14,8 +14,10 @@ public:
 	IAbilityStrategy();
 	~IAbilityStrategy();
 
+	virtual void OnPlayerPreUse(Simulator::cCreatureAbility* ability) = 0;
 	virtual void OnUse(cCreatureBasePtr source, Simulator::cCreatureAbility* ability) = 0;
 	virtual void OnHit(cCreatureBasePtr source, cCombatantPtr target, Simulator::cCreatureAbility* ability, float damage) = 0;
+	virtual void CanUse(cCreatureBasePtr source, Simulator::cCreatureAbility* ability) = 0;
 
 	static bool sRequiresTarget;
 

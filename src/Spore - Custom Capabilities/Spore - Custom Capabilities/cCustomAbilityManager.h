@@ -51,7 +51,7 @@ public:
 private:
 	hash_map<uint32_t, Simulator::cCreatureAbility*> mpLastUsedAbilities;
 	hash_map<uint32_t, IAbilityStrategy*> mpAbilityStrategies;
-	hash_map<Simulator::cCreatureAbility*, IAbilityStrategy*> mpCachedStrategies;
+	hash_map<ResourceKey, IAbilityStrategy*> mpCachedStrategies;
 	hash_map<uint32_t, Simulator::cCreatureAbility*> mpAbilities;
 	UILayoutPtr mpAbilityUI;
 };
