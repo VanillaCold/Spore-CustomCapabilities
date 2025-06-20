@@ -12,6 +12,7 @@ class ButtonWinProc
 	, public DefaultRefCounted
 {
 	IWindowPtr mpWindowOwner;
+	IDrawablePtr mpDrawable;
 public:
 	static const uint32_t TYPE = id("CustomAbilitySlotWinProc");
 

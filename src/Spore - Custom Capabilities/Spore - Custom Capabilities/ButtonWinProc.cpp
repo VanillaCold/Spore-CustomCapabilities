@@ -7,7 +7,12 @@
 ButtonWinProc::ButtonWinProc(UTFWin::IWindow* rootWindow, uint32_t attkID)
 {
 	this->mpWindowOwner = rootWindow;
-	SetAbility(attkID);
+	mpDrawable = mpWindowOwner->GetDrawable();
+	SetAbility(0x0);
+	
+	
+	//rootWindow->SetVisible(false);
+
 }
 
 
@@ -51,12 +56,17 @@ bool ButtonWinProc::HandleUIMessage(IWindow* window, const Message& message)
 	if (!GameNounManager.GetAvatar())
 	{
 		return false;
+
 	}
 	auto avatar = GameNounManager.GetAvatar();
 	auto ability = avatar->GetAbility(mAbilityID);
 
 	if (message.IsType(MessageType::kMsgButtonSelect))
 	{
+		if (mAbilityID == 0x0)
+		{
+			return true;
+		}
 		CustomAbilityManager.TriggerSkill(ability, avatar);
 		return true;
 	}
@@ -105,6 +115,20 @@ bool ButtonWinProc::HandleUIMessage(IWindow* window, const Message& message)
 
 void ButtonWinProc::SetAbility(uint32_t abilityID)
 {
+	if (abilityID == 0x0)
+	{
+
+		mpWindowOwner->SetDrawable(nullptr);
+		
+			// SetShadeColor(colour);
+
+		mAbilityID = 0x0;
+		return;
+	}
+	
+	mpWindowOwner->SetDrawable(mpDrawable.get());
+
+	mpWindowOwner->SetVisible(true);
 	vector<IWindow*> windowsToRemove;
 	for (UTFWin::IWindow* window : mpWindowOwner->children())
 	{
@@ -257,6 +281,7 @@ void ButtonWinProc::ListAbilities()
 		auto win = layout->FindWindowByID(0x0AAA0061);
 		win->SetArea(Math::Rectangle(xpos, ypos, xpos+xInterval, ypos+yInterval));
 		win->AddWinProc(new AbilityListWinProc(abilityIndicies[i], win, this));
+		win->SetShadeColor(0xFFFFFFFF);
 		layout->SetVisible(true);
 	}
 	
