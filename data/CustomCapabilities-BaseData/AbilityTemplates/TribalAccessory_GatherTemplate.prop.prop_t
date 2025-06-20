@@ -1,0 +1,23 @@
+key parent AbilityTemplates!CreatureAbilityTemplate
+string16 description "Gather"
+uint32s creatureAbilityAnimationIDs
+	0xffffffff
+end
+int32 creatureAbilityCategory 3
+texts creatureAbilityDescription
+	(Abilities!0x055d4837) "Gather (PLACEHOLDER)"
+end
+texts creatureAbilityName
+	(Abilities!0x055d4836) "Gather (PLACEHOLDER)"
+end
+uint32s creatureAbilityRequiredCAPs
+	0x68746774
+end
+int32 creatureAbilityType 47
+key verbIconCategory gather
+key verbIconImageID trg_gather
+key verbIconLayout 0x12F13857
+key verbIconStaticLayout 0x12F13857
+int32 verbIconTriggerKey -1
+bool verbIconUseDescription false
+bool allowAbilitySelection false

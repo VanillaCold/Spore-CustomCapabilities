@@ -1,0 +1,23 @@
+key parent AbilityTemplates!CreatureAbilityTemplate
+string16 description "Speed"
+uint32s creatureAbilityAnimationIDs
+	0xffffffff
+end
+int32 creatureAbilityCategory 2
+texts creatureAbilityDescription
+	(Abilities!0x0473a251) "Speed (PLACEHOLDER)"
+end
+texts creatureAbilityName
+	(Abilities!0x0473a250) "Speed (PLACEHOLDER)"
+end
+uint32s creatureAbilityRequiredCAPs
+	0x64707363
+end
+int32 creatureAbilityType 14
+key verbIconCategory speed
+key verbIconImageID 0x9E47FFD3
+key verbIconLayout 0xCDA510D7
+bool verbIconShowZeroLevel false
+key verbIconStaticLayout 0xCDA510D7
+bool verbIconUseDescription false
+bool allowAbilitySelection false

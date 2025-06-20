@@ -1,0 +1,9 @@
+texts creatureAbilityRolloverValueDescription
+	(Abilities!0x062d01ce) "Level"
+end
+texts creatureAbilityUnit
+	(Abilities!0x062d01cd) "Level"
+end
+bool verbIconShowZeroLevel false
+bool verbIconUseDescription false
+uint32 AbilityStrategy hash(DefaultStrategy)

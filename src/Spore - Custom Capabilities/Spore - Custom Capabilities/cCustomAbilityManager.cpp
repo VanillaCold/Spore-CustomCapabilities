@@ -161,6 +161,11 @@ void cCustomAbilityManager::CreateAbilityUI()
 	}
 }
 
+void cCustomAbilityManager::AddStrategy(uint32_t strategyID, IAbilityStrategy* strategy)
+{
+	mpAbilityStrategies.emplace(strategyID, strategy);
+}
+
 
 bool cCustomAbilityManager::HandleMessage(uint32_t messageID, void* message)
 {

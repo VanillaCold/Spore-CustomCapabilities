@@ -1,0 +1,16 @@
+key parent AbilityTemplates!CreatureAbilityTemplate
+texts creatureAbilityDescription
+	(Abilities!0x04d18881) "Omnivore Description (PLACEHOLDER)"
+end
+texts creatureAbilityName
+	(Abilities!0x04d18880) "Omnivore (PLACEHOLDER)"
+end
+bool isCarnivore true
+bool isHerbivore true
+key verbIconCategory omnivore
+key verbIconImageID 0x65288007
+bool verbIconShowLevel false
+key verbIconTrayOverrideImageID stats_omni_icon
+key verbIconTraySmallCardOverrideImageID stats_omni_icon_small
+bool verbIconUseDescription false
+bool allowAbilitySelection false

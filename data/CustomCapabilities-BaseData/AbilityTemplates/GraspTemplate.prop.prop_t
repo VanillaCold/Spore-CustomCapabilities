@@ -1,0 +1,24 @@
+key parent AbilityTemplates!CreatureAbilityTemplate
+string16 description "Grasp"
+int32 creatureAbilityCategory 3
+float creatureAbilityDNAPoints 0
+texts creatureAbilityDescription
+	(Abilities!0x000000a0) "Grasp Description (PLACEHOLDER)"
+end
+texts creatureAbilityName
+	(Abilities!0x0000009f) "Grasp (PLACEHOLDER)"
+end
+uint32s creatureAbilityRequiredCAPs
+	0x70737267
+end
+int32 creatureAbilityType 19
+key verbIconCategory grasp
+key verbIconGameLayout CRG_AbilitiesButton
+key verbIconImageID mv_grasper
+key verbIconLayout CRE_AbilitiesButton
+key verbIconRepresentativeAnimation 0x0445FF35
+bool verbIconShowLevel false
+key verbIconStaticLayout CRE_AbilitiesWindow
+int32 verbIconTriggerKey -1
+bool verbIconUseDescription false
+bool allowAbilitySelection false

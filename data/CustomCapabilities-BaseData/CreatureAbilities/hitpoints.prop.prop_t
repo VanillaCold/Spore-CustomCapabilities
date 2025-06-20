@@ -1,0 +1,18 @@
+key parent AbilityTemplates!CreatureAbilityTemplate
+string16 description "Health"
+texts creatureAbilityDescription
+	(Abilities!0x062cfa7e) "Health (PLACEHOLDER)"
+end
+texts creatureAbilityName
+	(Abilities!0x062cfa7d) "Health (PLACEHOLDER)"
+end
+texts creatureAbilityRolloverValueDescription
+	(Abilities!0x064922b6) "Level"
+end
+key verbIconCategory hitpoints
+key verbIconImageID 0xCA792E64
+key verbIconLayout CRE_HealthButton
+bool verbIconShowLevel true
+key verbIconStaticLayout CRE_HealthWindow
+bool verbIconUseDescription false
+bool allowAbilitySelection false

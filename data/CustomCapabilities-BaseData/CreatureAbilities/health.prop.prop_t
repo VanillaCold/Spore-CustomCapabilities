@@ -1,0 +1,15 @@
+key parent AbilityTemplates!CreatureAbilityTemplate
+string16 description "Health"
+texts creatureAbilityDescription
+	(Abilities!0x04cb5b6c) "Health (PLACEHOLDER)"
+end
+texts creatureAbilityName
+	(Abilities!0x04cb5b6d) "Health (PLACEHOLDER)"
+end
+key verbIconCategory health
+key verbIconImageID 0xCA792E64
+key verbIconLayout 0xCDA510D7
+bool verbIconShowLevel true
+key verbIconStaticLayout 0xCDA510D7
+bool verbIconUseDescription false
+bool allowAbilitySelection false

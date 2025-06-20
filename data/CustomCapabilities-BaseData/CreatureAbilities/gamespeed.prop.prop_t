@@ -1,0 +1,23 @@
+key parent AbilityTemplates!CreatureAbilityTemplate
+string16 description "Health"
+texts creatureAbilityDescription
+	(Abilities!0x00002003) "Speed (PLACEHOLDER)"
+end
+texts creatureAbilityName
+	(Abilities!0x00001003) "Speed (PLACEHOLDER)"
+end
+texts creatureAbilityRolloverValueDescription
+	(Abilities!0x06492254) "speed"
+end
+texts creatureAbilityUnit
+	(Abilities!0x06492254) "Speed"
+end
+key verbIconCategory gamespeed
+key verbIconImageID 0xCEEFB113
+bool verbIconShowLevel true
+bool verbIconShowZeroLevel true
+key verbIconStaticLayout 0x12F13857
+texts verbIconValueString
+	(Abilities!0x0649a1b0) "mph"
+end
+bool allowAbilitySelection false

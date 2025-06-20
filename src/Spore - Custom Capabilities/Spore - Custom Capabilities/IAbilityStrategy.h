@@ -27,7 +27,7 @@ public:
 	virtual void OnHit(cCreatureBasePtr source, cCombatantPtr target, Simulator::cCreatureAbility* ability, float damage) = 0;
 	// Determines whether it will appear as selectable or not in the UI.
 	// clicking it can still do someting depending on what you do in OnPlayerPreUse.
-	// Currently will only affect players - won't stop the AI.
+	// Currently will only affect players - won't stop the AI unless you do something in OnUse().
 	virtual bool CanUse(cCreatureBasePtr source, Simulator::cCreatureAbility* ability) = 0;
 
 	static bool sRequiresTarget;

@@ -1,0 +1,21 @@
+key parent AbilityTemplates!CreatureAbilityTemplate
+int32 creatureAbilityCategory 3
+float creatureAbilityDNAPoints 0
+texts creatureAbilityDescription
+	(Abilities!0x0473a24d) "Your creature has a basic carnivorous mouth. It gains 5 DNA points for each carcass eaten. (PLACEHOLDER)"
+end
+texts creatureAbilityName
+	(Abilities!0x0473a24c) "Carnivore (PLACEHOLDER)"
+end
+uint32s creatureAbilityRequiredCAPs
+	0x6e726163
+end
+int32 creatureAbilityType 27
+bool isCarnivore true
+key verbIconCategory carnivore
+key verbIconImageID 0x2099D0BD
+bool verbIconShowLevel false
+key verbIconTrayOverrideImageID stats_meat_icon
+key verbIconTraySmallCardOverrideImageID stats_meat_icon_small
+bool verbIconUseDescription false
+bool allowAbilitySelection false

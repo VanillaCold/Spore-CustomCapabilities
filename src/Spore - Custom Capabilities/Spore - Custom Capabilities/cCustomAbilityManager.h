@@ -41,6 +41,8 @@ public:
 	
 	virtual void CreateAbilityUI();
 
+	virtual void AddStrategy(uint32_t strategyID, IAbilityStrategy* strategy);
+
 
 	bool HandleMessage(uint32_t messageID, void* message) override;
 

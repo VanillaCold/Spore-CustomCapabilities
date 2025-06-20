@@ -5,6 +5,7 @@
 #include "cCustomAbilityManager.h"
 #include "CustomAbilityFactory.cpp";
 #include "ShowUICheat.h"
+#include "cDefaultAbilityStrategy.h"
 
 CapabilityFactory factory;
 cCustomAbilityFactory factory2;
@@ -17,6 +18,7 @@ void Initialize() {
 	
 	cCustomAbilityManager::Get();
 	CheatManager.AddCheat("ShowUI", new ShowUICheat());
+	CustomAbilityManager.AddStrategy(id("DefaultStrategy"), new cDefaultAbilityStrategy());
 }
 
 void Dispose()

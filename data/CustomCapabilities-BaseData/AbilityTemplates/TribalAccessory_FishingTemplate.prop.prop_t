@@ -1,0 +1,22 @@
+key parent AbilityTemplates!CreatureAbilityTemplate
+string16 description "Fishing"
+uint32s creatureAbilityAnimationIDs
+	0xffffffff
+end
+int32 creatureAbilityCategory 3
+texts creatureAbilityDescription
+	(Abilities!0x055d4839) "Fishing (PLACEHOLDER)"
+end
+texts creatureAbilityName
+	(Abilities!0x055d4838) "Fishing (PLACEHOLDER)"
+end
+uint32s creatureAbilityRequiredCAPs
+	0x68736674
+end
+int32 creatureAbilityType 48
+key verbIconCategory fishing
+key verbIconImageID trg_fish
+key verbIconLayout 0x12F13857
+key verbIconStaticLayout 0x12F13857
+bool verbIconUseDescription false
+bool allowAbilitySelection false

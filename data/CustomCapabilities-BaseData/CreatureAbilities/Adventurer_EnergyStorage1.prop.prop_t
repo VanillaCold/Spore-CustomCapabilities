@@ -1,0 +1,25 @@
+key parent AbilityTemplates!CreatureAbilityTemplate
+string16 description "Energy"
+uint32s creatureAbilityAnimationIDs
+	0xffffffff
+end
+int32 creatureAbilityCategory 3
+texts creatureAbilityDescription
+	(AbilitiesEP1!0x00000011) "Energy Regen Description(PLACEHOLDER)"
+end
+texts creatureAbilityName
+	(AbilitiesEP1!0x00001064) "Energy Regen Name(PLACEHOLDER)"
+end
+int32 creatureAbilityNoRequirements 1
+texts creatureAbilityRolloverValueDescription
+	(AbilitiesEP1!0x00000012) "Level"
+end
+int32 creatureAbilityType 87
+key verbIconCategory EnergyStorage
+colorRGBA verbIconColor (0.435, 0.698, 0.498, 1)
+key verbIconImageID 0xBD0350A2
+key verbIconLayout 0x12F13857
+key verbIconRolloverLevelLayoutID CRE_HealthWindow
+key verbIconStaticLayout 0x12F13857
+bool verbIconUseDescription false
+bool allowAbilitySelection false

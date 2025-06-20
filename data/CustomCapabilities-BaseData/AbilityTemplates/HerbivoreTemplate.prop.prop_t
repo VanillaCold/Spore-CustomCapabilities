@@ -1,0 +1,22 @@
+key parent AbilityTemplates!CreatureAbilityTemplate
+string16 description "Herbivore"
+int32 creatureAbilityCategory 3
+float creatureAbilityDNAPoints 0
+texts creatureAbilityDescription
+	(Abilities!0x0473a24f) "Your creature has a basic herbivorous mouth. It gains 5 DNA points for each carcass eaten. (PLACEHOLDER)"
+end
+texts creatureAbilityName
+	(Abilities!0x0473a24e) "Herbivore (PLACEHOLDER)"
+end
+uint32s creatureAbilityRequiredCAPs
+	0x62726568
+end
+int32 creatureAbilityType 27
+bool isHerbivore true
+key verbIconCategory herbivore
+key verbIconImageID 0x513E800A
+bool verbIconShowLevel false
+key verbIconTrayOverrideImageID stats_veg_icon
+key verbIconTraySmallCardOverrideImageID stats_veg_icon_small
+bool verbIconUseDescription false
+bool allowAbilitySelection false

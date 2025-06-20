@@ -1,0 +1,15 @@
+int32 creatureAbilityCategory 4
+float creatureAbilityEffectDuration 1
+int32 creatureAbilityEffectKind 0
+int32 creatureAbilityEffectType 0
+float creatureAbilityEnergyCost 1
+float creatureAbilityRange 1
+float creatureAbilityRangeMin 0
+float creatureAbilityRazeDamage 1
+float creatureAbilityRefresh 2
+bool creatureAbilityUseForBabyGame false
+key verbIconCategory bite
+key verbIconImageID atk_bite
+int32 verbIconTriggerKey -1
+bool verbIconUseDescription false
+bool allowAbilitySelection false

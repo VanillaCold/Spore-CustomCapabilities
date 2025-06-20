@@ -1,0 +1,28 @@
+key parent AbilityTemplates!CreatureAbilityTemplate
+string16 description "Absorption Shield"
+uint32s creatureAbilityAnimationIDs
+	0xffffffff
+end
+int32 creatureAbilityCategory 3
+texts creatureAbilityDescription
+	(AbilitiesEP1!0x00001017) "Absorption Shield Description (PLACEHOLDER)"
+end
+texts creatureAbilityName
+	(AbilitiesEP1!0x00001016) "Absorption Shield (PLACEHOLDER)"
+end
+uint32s creatureAbilityRequiredCAPs
+	0x73626161
+end
+vector2s creatureAbilityRequiredCAPsMaxValueRange
+	(1, 1)
+end
+int32 creatureAbilityType 69
+key verbIconCategory AbsorptionShield
+colorRGBA verbIconColor (0.435, 0.698, 0.498, 1)
+key verbIconImageID EnergyAbsorption
+key verbIconLayout 0xCDA510D7
+key verbIconRolloverLevelLayoutID CRE_HealthWindow
+bool verbIconShowZeroLevel false
+key verbIconStaticLayout 0xCDA510D7
+bool verbIconUseDescription false
+bool allowAbilitySelection false

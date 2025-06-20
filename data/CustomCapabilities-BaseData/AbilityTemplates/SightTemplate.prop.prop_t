@@ -1,0 +1,23 @@
+key parent AbilityTemplates!CreatureAbilityTemplate
+string16 description "Sense"
+int32 creatureAbilityCategory 2
+texts creatureAbilityDescription
+	(Abilities!0x0500e7de) "Sense (PLACEHOLDER)"
+end
+texts creatureAbilityName
+	(Abilities!0x0500e7dd) "Sense (PLACEHOLDER)"
+end
+uint32s creatureAbilityRequiredCAPs
+	0x736e6573
+end
+int32 creatureAbilityType 40
+key verbIconCategory sense
+key verbIconGameLayout CRG_AbilitiesButton
+key verbIconImageID mv_sight
+key verbIconLayout CRE_AbilitiesButton
+key verbIconRepresentativeAnimation 0x04462CF3
+bool verbIconShowLevel false
+key verbIconStaticLayout CRE_AbilitiesWindow
+int32 verbIconTriggerKey -1
+bool verbIconUseDescription false
+bool allowAbilitySelection false

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Spore\BasicIncludes.h>
+#include "ButtonWinProc.h"
 
 #define AbilityListWinProcPtr intrusive_ptr<AbilityListWinProc>
 
@@ -14,7 +15,7 @@ class AbilityListWinProc
 public:
 	static const uint32_t TYPE = id("AbilityListWinProc");
 	
-	AbilityListWinProc();
+	AbilityListWinProc(int abilityIndex, UTFWin::IWindow* parent, ButtonWinProc* btnProc);
 	~AbilityListWinProc();
 
 	int AddRef() override;
@@ -25,4 +26,10 @@ public:
 	// This is the function you have to implement, called when a window you added this winproc to received an event
 	bool HandleUIMessage(IWindow* pWindow, const Message& message) override;
 	
+	int abilityIndex;
+	IWindowPtr mpWindowOwner;
+	ButtonWinProc* mpOwnerProc;
+
+	static bool sbRemove;
+
 };

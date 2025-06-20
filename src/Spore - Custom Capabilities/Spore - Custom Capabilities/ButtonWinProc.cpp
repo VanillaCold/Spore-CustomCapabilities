@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "ButtonWinProc.h"
 #include "cCustomAbilityManager.h"
+#include "AbilityListWinProc.h"
 //#include "HologramScoutMod.h"
 
 ButtonWinProc::ButtonWinProc(UTFWin::IWindow* rootWindow, uint32_t attkID)
@@ -65,7 +66,7 @@ bool ButtonWinProc::HandleUIMessage(IWindow* window, const Message& message)
 	{
 		if (message.Mouse.IsRightButton())
 		{
-
+			ListAbilities();
 			//SetAbility(id("scan"));
 			return true;
 		}
@@ -98,6 +99,9 @@ bool ButtonWinProc::HandleUIMessage(IWindow* window, const Message& message)
 	// Return true if the message was handled, and therefore no other window procedure should receive it.
 	return false;
 }
+
+
+
 
 void ButtonWinProc::SetAbility(uint32_t abilityID)
 {
@@ -161,4 +165,99 @@ void ButtonWinProc::SetAbility(uint32_t abilityID)
 	mpWindowOwner->AddWinProc(UTFWin::CreateTooltip(tooltip.c_str()));
 
 	mAbilityID = abilityID;
+
+	AbilityListWinProc::sbRemove = true;
+}
+
+
+
+
+
+
+void ButtonWinProc::ListAbilities()
+{
+	// Init. variables.
+	auto mainWindow = WindowManager.GetMainWindow();
+	bool isBelow = false;
+	bool isLeft = false;
+	bool isSpaceGame = Simulator::IsSpaceGame();
+	auto avatar = GameNounManager.GetAvatar();
+	const auto abilities = avatar->mpSpeciesProfile->mAbilities;
+
+	// Get abs. position, and size of main window.
+	auto position = &mpWindowOwner->GetRealArea();
+	auto mainSize = &mainWindow->GetRealArea();
+
+	if (position->y1 > mainSize->y2 - position->y2)
+	{
+		isBelow = true;
+	}
+
+	if (position->x1 > mainSize->x2 - position->x2)
+	{
+		isLeft = true;
+	}
+
+
+	// get all abilities that are valid to switch to
+	vector<int> abilityIndicies = vector<int>();
+	for (int i = 0; i < abilities.size(); i++)
+	{
+		const auto& ability = abilities[i];
+		bool isValid = false;
+		bool onlySpaceStage = false;
+		if (App::Property::GetBool(ability->mpPropList.get(), id("allowAbilitySelection"), isValid))
+		{
+			if (isValid == false)
+			{
+				continue;
+			}
+		}
+		if (App::Property::GetBool(ability->mpPropList.get(), id("spaceStageOnly"), onlySpaceStage))
+		{
+			if (onlySpaceStage && !isSpaceGame)
+			{
+				continue;
+			}
+		}
+
+		abilityIndicies.push_back(i);
+
+	}
+
+	// Start to create the actual ability options
+	int yInterval = 24;
+	int xInterval = 161;
+
+	// remember: negative values is up
+	if (isBelow)
+	{
+		yInterval *= -1;
+	}
+	if (isLeft)
+	{
+		xInterval *= -1;
+	}
+
+	int acceptibleHeight = mainSize->y2 / 3;
+	uint32_t verticalNumber = max(6,acceptibleHeight / yInterval);
+
+	for (int i = 0; i < abilityIndicies.size(); i++)
+	{
+		UILayout* layout = new UILayout();
+		layout->LoadByID(id("CustomDropdown"));
+		
+		auto ypos = (i % verticalNumber) * yInterval; 
+		auto xpos = floor(i / verticalNumber) * xInterval;
+
+		SporeDebugPrint("made window");
+
+		layout->SetParentWindow(mpWindowOwner.get());
+
+		auto win = layout->FindWindowByID(0x0AAA0061);
+		win->SetArea(Math::Rectangle(xpos, ypos, xpos+xInterval, ypos+yInterval));
+		win->AddWinProc(new AbilityListWinProc(abilityIndicies[i], win, this));
+		layout->SetVisible(true);
+	}
+	
 }
