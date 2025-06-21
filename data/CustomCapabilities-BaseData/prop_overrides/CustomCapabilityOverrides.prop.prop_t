@@ -1,0 +1,8 @@
+#verbIconTriggerKey -2
+string8s replacementList
+	"int32 0x04DAD031 triggerKey"
+	"uint32s 0x07352141 reqCaps"
+end
+int32 triggerKey 1
+uint32s reqCaps
+end

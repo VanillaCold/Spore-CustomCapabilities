@@ -88,7 +88,7 @@ Simulator::cCreatureAbility* GetAbilityDetour::DETOUR(int index)
 		{
 			if (ability->mpPropList->GetResourceKey().instanceID == index)
 			{
-				SporeDebugPrint("0x%x, 0x%x", index, ability->mpPropList->GetResourceKey().instanceID);
+				//SporeDebugPrint("0x%x, 0x%x", index, ability->mpPropList->GetResourceKey().instanceID);
 				return ability;
 			}
 		}

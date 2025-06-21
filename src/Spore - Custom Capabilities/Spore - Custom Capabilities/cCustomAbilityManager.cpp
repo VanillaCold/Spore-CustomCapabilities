@@ -150,14 +150,43 @@ void cCustomAbilityManager::TriggerSkill(Simulator::cCreatureAbility* ability, c
 
 void cCustomAbilityManager::CreateAbilityUI()
 {
-	mpAbilityUI = nullptr;
-	mpAbilityUI = new UTFWin::UILayout();
-	mpAbilityUI->LoadByID(id("CustomButtons"));
+	
 
-	for (int i = 1; i < 6; i++)
+	if (WindowManager.GetMainWindow()->FindWindowByID(0x01012032))
 	{
-		auto window = mpAbilityUI->FindWindowByID(id(("Btn" + to_string(i)).c_str()));
-		window->AddWinProc(new ButtonWinProc(window, id("Adventurer_PoisonBlade1")));
+		const vector<uint32_t> vec = { 0x01012031, 0x01012032, 0x01012033, 0x01012034, 0x01012030, 0x01012011, 0x01012012, 0x01012013, 0x01012010, 0x01012020, 0x01012021, 0x01012022, 0x01012023 };
+		for (auto winID : vec)
+		{
+			auto a = WindowManager.GetMainWindow()->FindWindowByID(winID);
+			
+			/*auto layout = new UTFWin::UILayout();
+			layout->LoadByID(id("btn"));
+			layout->SetVisible(true);
+			layout->SetParentWindow(a->GetParent());
+			auto newWindow = layout->FindWindowByID(0x01012020);
+
+			newWindow->SetArea(a->GetArea());
+			newWindow->SetDrawable(a->GetDrawable());
+			newWindow->SetControlID(a->GetControlID());
+			a->GetParent()->BringToFront(newWindow);
+			
+
+			a->GetParent()->RemoveWindow(a);*/
+
+			a->AddWinProc(new ButtonWinProc(a, 0x0));
+		}
+	}
+	else
+	{
+		mpAbilityUI = nullptr;
+		mpAbilityUI = new UTFWin::UILayout();
+		mpAbilityUI->LoadByID(id("CustomButtons"));
+
+		for (int i = 1; i < 6; i++)
+		{
+			auto window = mpAbilityUI->FindWindowByID(id(("Btn" + to_string(i)).c_str()));
+			window->AddWinProc(new ButtonWinProc(window, id("Adventurer_PoisonBlade1")));
+		}
 	}
 }
 

@@ -6,8 +6,24 @@
 
 ButtonWinProc::ButtonWinProc(UTFWin::IWindow* rootWindow, uint32_t attkID)
 {
+	auto winProcs = vector<IWinProc*>();
+	auto winProc = rootWindow->GetNextWinProc();
+	while (winProc != nullptr)
+	{
+		if (winProc != this)
+		{
+			winProcs.push_back(winProc);
+			//rootWindow->RemoveWinProc(winProc);
+		}
+		winProc = rootWindow->GetNextWinProc(winProc);
+	}
+	for (auto a : winProcs)
+	{
+		rootWindow->RemoveWinProc(winProc);
+	}
 	this->mpWindowOwner = rootWindow;
 	mpDrawable = mpWindowOwner->GetDrawable();
+	mpWindowOwner->SetVisible(true);
 	SetAbility(0x0);
 	
 	
@@ -118,10 +134,11 @@ void ButtonWinProc::SetAbility(uint32_t abilityID)
 	if (abilityID == 0x0)
 	{
 
+
 		mpWindowOwner->SetDrawable(nullptr);
-		
 			// SetShadeColor(colour);
 
+		mpWindowOwner->Revalidate();
 		mAbilityID = 0x0;
 		return;
 	}
@@ -129,7 +146,8 @@ void ButtonWinProc::SetAbility(uint32_t abilityID)
 	mpWindowOwner->SetDrawable(mpDrawable.get());
 
 	mpWindowOwner->SetVisible(true);
-	vector<IWindow*> windowsToRemove;
+	
+	/*vector<IWindow*> windowsToRemove;
 	for (UTFWin::IWindow* window : mpWindowOwner->children())
 	{
 		if (window != mpWindowOwner && window)
@@ -141,7 +159,7 @@ void ButtonWinProc::SetAbility(uint32_t abilityID)
 	for (UTFWin::IWindow* window : windowsToRemove)
 	{
 		mpWindowOwner->RemoveWindow(window);
-	}
+	}*/
 
 	UTFWin::IWinProc* winProc = mpWindowOwner->GetNextWinProc();
 	while (winProc != nullptr)
@@ -153,10 +171,10 @@ void ButtonWinProc::SetAbility(uint32_t abilityID)
 		winProc = mpWindowOwner->GetNextWinProc(winProc);
 	}
 
-	auto window = new UTFWin::Window();
+	//auto window = new UTFWin::Window();
 
-	window->SetControlID(0x0);
-	mpWindowOwner->AddWindow(window);
+	//window->SetControlID(0x0);
+	//mpWindowOwner->AddWindow(window);
 
 	auto skill = CustomAbilityManager.GetAbility(abilityID);
 	if (!skill)
@@ -165,16 +183,28 @@ void ButtonWinProc::SetAbility(uint32_t abilityID)
 		return;
 	}
 	ResourceKey imgKey = ResourceKey(skill->mVerbIconImageID, TypeIDs::png, id("CustomAbilityIcons"));
+	ImagePtr img;
+	UTFWin::Image::GetImage(imgKey, img);
+	((SporeStdDrawable*)mpWindowOwner->GetDrawable())->SetIconImage(img.get(), 0);
+	/*((SporeStdDrawable*)mpWindowOwner->GetDrawable())->SetIconImage(img.get(), 1);
+	((SporeStdDrawable*)mpWindowOwner->GetDrawable())->SetIconImage(img.get(), 2);
+	((SporeStdDrawable*)mpWindowOwner->GetDrawable())->SetIconImage(img.get(), 3);
+	((SporeStdDrawable*)mpWindowOwner->GetDrawable())->SetIconImage(img.get(), 4);
+	((SporeStdDrawable*)mpWindowOwner->GetDrawable())->SetIconImage(img.get(), 5);
+	((SporeStdDrawable*)mpWindowOwner->GetDrawable())->SetIconImage(img.get(), 6);
+	((SporeStdDrawable*)mpWindowOwner->GetDrawable())->SetIconImage(img.get(), 7);*/
 
-	UTFWin::ImageDrawable* imageDrawable = new UTFWin::ImageDrawable();
-	window->SetDrawable(imageDrawable);
-	window->SetShadeColor(Math::Color(255, 255, 255, 240));
+	mpWindowOwner->Revalidate();
+	
+	//UTFWin::ImageDrawable* imageDrawable = new UTFWin::ImageDrawable();
+	//window->SetDrawable(imageDrawable);
+	//window->SetShadeColor(Math::Color(255, 255, 255, 240));
 
-	window->SetArea(Math::Rectangle(8, 8, 28, 28));
-	UTFWin::ImageDrawable::SetImageForWindow(window, imgKey);
+	//window->SetArea(Math::Rectangle(8, 8, 28, 28));
+	//UTFWin::ImageDrawable::SetImageForWindow(window, imgKey);
 
-	window->SetVisible(true);
-	window->SetFlag(UTFWin::WindowFlags::kWinFlagIgnoreMouse, true);
+	//window->SetVisible(true);
+	//window->SetFlag(UTFWin::WindowFlags::kWinFlagIgnoreMouse, true);
 	//creatureAbilityRolloverValueDescription
 
 	Math::Vector2 minLevel;
@@ -209,15 +239,16 @@ void ButtonWinProc::ListAbilities()
 	const auto abilities = avatar->mpSpeciesProfile->mAbilities;
 
 	// Get abs. position, and size of main window.
-	auto position = &mpWindowOwner->GetRealArea();
-	auto mainSize = &mainWindow->GetRealArea();
+	auto position = mpWindowOwner->GetParent()->GetRealArea();
+	auto mainSize = mainWindow->GetRealArea();
 
-	if (position->y1 > mainSize->y2 - position->y2)
+	SporeDebugPrint("%f, %f, %f, %f", position.y1, position.y2, mainSize.y1, mainSize.y2);
+	if (position.y1 > mainSize.y2 - position.y2)
 	{
 		isBelow = true;
 	}
 
-	if (position->x1 > mainSize->x2 - position->x2)
+	if (position.x1 > mainSize.x2 - position.x2)
 	{
 		isLeft = true;
 	}
@@ -253,35 +284,35 @@ void ButtonWinProc::ListAbilities()
 	int yInterval = 24;
 	int xInterval = 161;
 
+	int acceptibleHeight = mainSize.y2 / 3;
+	uint32_t verticalNumber = max(6, acceptibleHeight / yInterval);
+
 	// remember: negative values is up
-	if (isBelow)
+	if (!isBelow)
 	{
-		yInterval *= -1;
+		yInterval = -yInterval;
 	}
 	if (isLeft)
 	{
 		xInterval *= -1;
 	}
 
-	int acceptibleHeight = mainSize->y2 / 3;
-	uint32_t verticalNumber = max(6,acceptibleHeight / yInterval);
-
 	for (int i = 0; i < abilityIndicies.size(); i++)
 	{
 		UILayout* layout = new UILayout();
 		layout->LoadByID(id("CustomDropdown"));
 		
-		auto ypos = (i % verticalNumber) * yInterval; 
-		auto xpos = floor(i / verticalNumber) * xInterval;
+		int ypos = (i % verticalNumber) * yInterval;
+		int xpos = floor(i / verticalNumber) * xInterval;
 
-		SporeDebugPrint("made window");
 
 		layout->SetParentWindow(mpWindowOwner.get());
 
 		auto win = layout->FindWindowByID(0x0AAA0061);
-		win->SetArea(Math::Rectangle(xpos, ypos, xpos+xInterval, ypos+yInterval));
+		win->SetArea(Math::Rectangle(xpos, ypos, xpos+xInterval, ypos+24));
 		win->AddWinProc(new AbilityListWinProc(abilityIndicies[i], win, this));
 		win->SetShadeColor(0xFFFFFFFF);
+
 		layout->SetVisible(true);
 	}
 	
