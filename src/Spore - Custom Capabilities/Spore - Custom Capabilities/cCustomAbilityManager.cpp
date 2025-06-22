@@ -159,7 +159,7 @@ void cCustomAbilityManager::CreateAbilityUI()
 		{
 			auto a = WindowManager.GetMainWindow()->FindWindowByID(winID);
 			
-			/*auto layout = new UTFWin::UILayout();
+			auto layout = new UTFWin::UILayout();
 			layout->LoadByID(id("btn"));
 			layout->SetVisible(true);
 			layout->SetParentWindow(a->GetParent());
@@ -171,9 +171,9 @@ void cCustomAbilityManager::CreateAbilityUI()
 			a->GetParent()->BringToFront(newWindow);
 			
 
-			a->GetParent()->RemoveWindow(a);*/
+			a->GetParent()->RemoveWindow(a);
 
-			a->AddWinProc(new ButtonWinProc(a, 0x0));
+			newWindow->AddWinProc(new ButtonWinProc(newWindow, 0x0));
 		}
 	}
 	else

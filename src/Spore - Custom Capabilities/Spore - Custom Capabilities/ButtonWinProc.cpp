@@ -238,17 +238,22 @@ void ButtonWinProc::ListAbilities()
 	auto avatar = GameNounManager.GetAvatar();
 	const auto abilities = avatar->mpSpeciesProfile->mAbilities;
 
+	auto parent = mpWindowOwner->GetParent();
+
 	// Get abs. position, and size of main window.
-	auto position = mpWindowOwner->GetParent()->GetRealArea();
+	auto position = mpWindowOwner->GetRealArea();
 	auto mainSize = mainWindow->GetRealArea();
 
-	SporeDebugPrint("%f, %f, %f, %f", position.y1, position.y2, mainSize.y1, mainSize.y2);
-	if (position.y1 > mainSize.y2 - position.y2)
+	Math::Point topLeft = parent->ToGlobalCoordinates(Math::Point(position.x1, position.y1));
+	Math::Point bottomRight = parent->ToGlobalCoordinates(Math::Point(position.x2, position.y2));
+
+	SporeDebugPrint("%f, %f, %f, %f", topLeft.y, bottomRight.y, mainSize.y1, mainSize.y2);
+	if (topLeft.y > mainSize.y2 - bottomRight.y)
 	{
 		isBelow = true;
 	}
 
-	if (position.x1 > mainSize.x2 - position.x2)
+	if (topLeft.x > mainSize.x2 - bottomRight.x)
 	{
 		isLeft = true;
 	}
@@ -288,11 +293,11 @@ void ButtonWinProc::ListAbilities()
 	uint32_t verticalNumber = max(6, acceptibleHeight / yInterval);
 
 	// remember: negative values is up
-	if (!isBelow)
+	if (isBelow)
 	{
 		yInterval = -yInterval;
 	}
-	if (isLeft)
+	if (!isLeft)
 	{
 		xInterval *= -1;
 	}
@@ -306,12 +311,19 @@ void ButtonWinProc::ListAbilities()
 		int xpos = floor(i / verticalNumber) * xInterval;
 
 
-		layout->SetParentWindow(mpWindowOwner.get());
+		layout->SetParentWindow(WindowManager.GetMainWindow());//mpWindowOwner.get());
+
+		Math::Point newTopLeft = mpWindowOwner->ToGlobalCoordinates(Math::Point(xpos, ypos));
+		Math::Rectangle newArea = Math::Rectangle(newTopLeft.x, newTopLeft.y, newTopLeft.x + 161, newTopLeft.y + 24);
 
 		auto win = layout->FindWindowByID(0x0AAA0061);
-		win->SetArea(Math::Rectangle(xpos, ypos, xpos+xInterval, ypos+24));
+		win->SetArea(newArea);
 		win->AddWinProc(new AbilityListWinProc(abilityIndicies[i], win, this));
 		win->SetShadeColor(0xFFFFFFFF);
+		win->SetFlag(UTFWin::WindowFlags::kWinFlagAlwaysInFront, true);
+		mpWindowOwner->SetFlag(WindowFlags::kWinFlagAlwaysInFront, true);
+		mpWindowOwner->Revalidate();
+		win->Revalidate();
 
 		layout->SetVisible(true);
 	}
