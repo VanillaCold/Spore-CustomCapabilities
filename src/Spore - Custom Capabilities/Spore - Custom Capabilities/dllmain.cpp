@@ -128,11 +128,65 @@ virtual_detour(GetAbilityCountDetour, Simulator::cCreatureAnimal, Simulator::cCr
 	}
 };
 
+/*member_detour(UILayoutDetour, UTFWin::UILayout, bool(ResourceKey&, bool, uint32_t))
+{
+	bool detoured(const ResourceKey & resourceKey, bool = true, uint32_t = kDefaultParameter)
+	{
+		if (resourceKey.instanceID == )
+	}
+};*/
+
+member_detour(InitDetour, Simulator::cScenarioPlayMode, void(int)) //ActDetour, Simulator::cScenarioPlayMode, void(int, bool))
+{
+	void detoured(int a)
+	{
+		auto removedAbilities = vector<Simulator::cCreatureAbility*>();
+		auto avatar = GameNounManager.GetAvatar();
+		if (avatar && avatar->mpSpeciesProfile)
+		{
+			SporeDebugPrint("nyaaaaaaaaaaaa~!");
+			auto vec = eastl::fixed_vector <cCreatureAbility*, 20U, true>();
+			//vec.push_back(CustomAbilityManager.GetAbility(id("call1")));
+
+			for (int i = 0; i < avatar->GetAbilitiesCount(); i++)
+			{
+				auto ability = avatar->GetAbility(i);
+				if (ability->mCategory == 2)
+				{
+					vec.push_back(ability);
+				}
+				else
+				{
+					removedAbilities.push_back(ability);
+				}
+			}
+			avatar->mpSpeciesProfile->mAbilities = vec;
+		}
+		original_function(this, a);
+
+		CustomAbilityManager.CreateAbilityUI();
+
+		if (removedAbilities.size() != 0 && avatar)
+		{
+			for (int i = 0; i < removedAbilities.size(); i++)
+			{
+				avatar->mpSpeciesProfile->mAbilities.push_back(removedAbilities[i]);
+			}
+		}
+		
+	}
+};
+
 void AttachDetours()
 {
+	//Simulator::cScenarioPlayMode::SetCurrentAct(int actIndex, bool = false)
+	//Simulator::cScenarioPlayMode::Initialize()
+
 	//00c0e7e0
 
 	//ContinueAbilityDetour::attach(Address(0x00c1e8b0));
+
+	InitDetour::attach(Address(0x00f0ff10));//GetAddress(Simulator::cScenarioPlayMode, Initialize));
 
 	GetAbilityDetour::attach(Address(0x00c047d0));
 
@@ -149,6 +203,9 @@ void AttachDetours()
 	//AnotherTestDetour::attach(Address(0x00c07500));
 
 	//GetAbilityCountDetour::attach(Address(0x00c04750));
+
+	//(const ResourceKey& resourceKey, bool = true, uint32_t = kDefaultParameter
+	//UTFWin::UILayout::Load
 	
 	//YetAnotherTest::attach(Address(0x00c19900));//0x00c02b40));
 
