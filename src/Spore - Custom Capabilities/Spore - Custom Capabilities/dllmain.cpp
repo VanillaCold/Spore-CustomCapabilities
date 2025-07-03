@@ -166,7 +166,7 @@ member_detour(InitDetour, Simulator::cScenarioPlayMode, void(int)) //ActDetour, 
 
 		CustomAbilityManager.CreateAbilityUI();
 
-		if (removedAbilities.size() != 0 && avatar)
+		if (removedAbilities.size() != 0 && avatar && avatar->mpSpeciesProfile)
 		{
 			for (int i = 0; i < removedAbilities.size(); i++)
 			{
